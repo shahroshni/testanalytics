@@ -25,7 +25,7 @@
      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FHKV43"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-<form action="images.html" method="get" onsubmit="return validateForm()">
+<form action="images.html" method="get" onsubmit="return validateForm(), dataLayer.push({'event': 'submitclick'});">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" onclick="dataLayer.push({'event': 'formfieldclick', 'fieldname': 'name'});"><br><br>
     <label for="email">Email:</label>
@@ -87,7 +87,7 @@
     <input type="radio" id="male" name="gender" value="male" checked="checked"><label for="male">Male</label>
     <input type="radio" id="female" name="gender" value="female">
     <label for="female">Female</label><br><br>
-    <input type="submit" value="Submit" onclick="dataLayer.push({'event': 'submitclick'});">
+    <input type="submit" value="Submit">
   </form>
 </body>
 </html>
