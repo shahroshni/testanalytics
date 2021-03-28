@@ -30,6 +30,7 @@ function validatename()
     // name field is blank
     if (x == "" || x.trim() =="") 
     {
+       alert(x.trim())
       alert("Name must be filled out");
       return false;
     }
