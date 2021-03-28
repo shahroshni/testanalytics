@@ -28,7 +28,7 @@ function validatename()
 {
     let x = document.getElementById("name").value;
     // name field is blank
-    if (x == "" || x.trim =="") 
+    if (x == "" || x.trim() =="") 
     {
       alert("Name must be filled out");
       return false;
