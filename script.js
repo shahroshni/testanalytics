@@ -18,7 +18,7 @@ function validateForm()
     result =  validatename();
     result = validatemobile();
     result = validateemail();
-    if(result=="true")
+    if(result==true)
     {
         dataLayer.push({'event': 'submitclick'});
     }
