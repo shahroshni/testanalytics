@@ -26,35 +26,36 @@
          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FHKV43"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- End Google Tag Manager (noscript) -->
+        
         <input type="radio" name="car" id="nissan" class="input-hidden" />
-            <label for="nissan">
+            <label for="nissan" onclick="dataLayer.push({'img_name': 'nissan', 'timetaken': event.timeStamp});">
             <img src="images/nissan.png" />
             </label>
 
     <input 
     type="radio" name="car"
-    id="mitsubishi" class="input-hidden" />
+    id="mitsubishi" class="input-hidden" onclick="dataLayer.push({'img_name': 'mitsubishi', 'timetaken': event.timeStamp});"/>
     <label for="mitsubishi">
     <img src="images/mitsubishi.png"/>
     </label>
 
     <input 
     type="radio" name="car"
-    id="jaguar" class="input-hidden" />
+    id="jaguar" class="input-hidden" onclick="dataLayer.push({'img_name': 'jaguar', 'timetaken': event.timeStamp});"/>
     <label for="jaguar">
     <img src="images/jaguar.png"/>
     </label>
 
     <input 
     type="radio" name="car"
-    id="renault" class="input-hidden" />
+    id="renault" class="input-hidden" onclick="dataLayer.push({'img_name': 'renault', 'timetaken': event.timeStamp});"/>
     <label for="renault">
     <img src="images/renault.png"/>
     </label>
 
     <input 
     type="radio" name="car"
-    id="bmw" class="input-hidden" />
+    id="bmw" class="input-hidden" onclick="dataLayer.push({'img_name': 'bmw', 'timetaken': event.timeStamp});"/>
     <label for="bmw">
     <img src="images/bmw.png"/>
     </label>
