@@ -16,9 +16,11 @@ function thankyou()
 function validateForm()
 {
     var result;
-    result =  validatename();
-    result = validatemobile();
-    result = validateemail();
+    //check for valid field
+    if(validatename() == true && validateemail() == true && validatemobile() == true ){
+        result = true;}
+
+    else{result = false;}
     if(result==true)
     {
         dataLayer.push({'event': 'submitclick'});
@@ -29,7 +31,7 @@ function validatename()
 {
     let x = document.getElementById("name").value;
     // name field is blank
-    if (x == "" || x.trim() =="") 
+    if (x == "") 
     {
        alert(x.trim())
       alert("Name must be filled out");
@@ -37,7 +39,7 @@ function validatename()
     }
     else
     {
-        var regex = /^[A-Za-z ]+$/
+        var regex = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/
         //check for special symbols
         if(!(regex.test(document.getElementById("name").value)))
         {
