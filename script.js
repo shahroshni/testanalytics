@@ -11,6 +11,7 @@ function thankyou()
     queryString = queryString.substring(1); 
     var queries = queryString.split("=");
     document.querySelector('img').src = queries[1];
+    dataLayer.push({'event': 'success'});
 }
 function validateForm()
 {
