@@ -118,7 +118,7 @@ function validatename()
         //check for special symbols
         if(!(regex.test(document.getElementById("name").value)))
         {
-            alert("Name cannot contain special characters or numbers")
+            alert("Invalid Name!!")
             return false;
         }
         else{return true;}
@@ -129,7 +129,7 @@ function validatemobile()
     let regex = /^[6-9][0-9]{9}$/
     if(!(regex.test(document.getElementById("mob").value)))
             {
-                alert("Invalid mobile numbers")
+                alert("Invalid Mobile Number!!")
                 return false
             }
     else{return true;}
